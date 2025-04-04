@@ -7,14 +7,48 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
-    <header>
+<body id="bodyIndex">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="detail-movie.html">Detalles de pelucula</a></li>
+                    <li><a href="detail-serie.html">Detalles de serie</a></li>
+                    <li><a href="moviegenres.html">Generos de pelicula</a></li>
+                    <li><a href="seriesgenres.html">Generos de serie</a></li>
+                    <li><a href="detail-genres.html">Detalle de generos</a></li>
+                    <li><a href="search-results.html"></a>Resultados de busqueda</li>
+                    <li><a href="login.html">Log-in</a></li>
+                    <li><a href="register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+    
 
-    </header>
-
-    <main>
-
-    </main>
+        <main id="mainIndex">
+            <h2>Bienvenido</h2>
+            <form action="./searchResults.html" method="get">
+                
+                <div>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="" placeholder="Ingrese su email" required>
+                    <p>Obligatorio</p>
+                </div>
+                
+                
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="" placeholder="Ingrese su contraseña" required>
+                    <p>Obligatorio</p>
+                </div>
+                <div class="cuenta">   
+                    <p>¿No tenes cuenta? <a href="register.html">Registrate</a></p>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Ingresar</button>
+                </div>
+            </form>
+        </main>
 
     <footer>
         
