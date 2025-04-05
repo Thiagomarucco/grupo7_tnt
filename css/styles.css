@@ -1,4 +1,9 @@
 /* css del home */
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
 #bodyIndex {
     display: flex;
     flex-direction: column;
@@ -66,8 +71,10 @@ nav ul li a {
     flex-wrap: nowrap;
     align-items: center;
 }
-.fotoart {
-    width: 100%;
+.cajapeli img {
+    height: 400px;
+    width: 390px;
+
 }
 .titulosection {
     width: 100%;
@@ -78,8 +85,10 @@ nav ul li a {
     color: black;
     text-decoration: none;
 }
-.nombrelargo {
-    font-size: medium;
+.nombrePeli {
+    font-size: small;
+    font-weight: bold;
+    justify-content: center;
 }
 
 

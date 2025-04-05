@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body id="bodyIndex">
@@ -17,7 +20,7 @@
                     <li><a href="moviegenres.html">Generos de pelicula</a></li>
                     <li><a href="seriesgenres.html">Generos de serie</a></li>
                     <li><a href="detail-genres.html">Detalle de generos</a></li>
-                    <li><a href="search-results.html"></a>Resultados de busqueda</li>
+                    <li><a href="search-results.html">Resultados de busqueda</a></li>
                     <li><a href="login.html">Log-in</a></li>
                     <li><a href="register.html">Registro</a></li>
                 </ul>
@@ -25,9 +28,35 @@
         </header>
     
 
-    <main>
-
-    </main>
+        <main id="mainIndex">
+            <h2>Bienvenido</h2>
+            <form action="./login.html" method="get">
+                
+                <div>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="" placeholder="Ingrese su email" required>
+                    <p>Obligatorio</p>
+                </div>
+                
+                
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="" placeholder="Ingrese su contraseña" required>
+                    <p>Obligatorio</p>
+                </div>
+    
+                <div class="checks">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                </div> 
+                <div class="cuenta">   
+                    <a href="login.html">Ya tengo cuenta</a>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </main>
 
     <footer class="pie">
         <p>Hecho por: Mateo, Nicolás y Thiago</p>
