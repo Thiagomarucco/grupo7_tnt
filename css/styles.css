@@ -1,4 +1,3 @@
-/* css del home */
 * {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
@@ -109,14 +108,18 @@ nav ul li a {
     justify-content: center;
 }
 
-
-
 /* detalle pelicula y series*/
 .cajapadredetalle {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: left;
+}
+.cajapadredetalles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
 }
 .detallepeli {
     display: flex;
@@ -130,12 +133,51 @@ nav ul li a {
     flex-wrap: nowrap;
     align-items: center;
 }
-.fotodetalle {
-    width: 400px;
-    background-color: black;
-    padding: 3%;
+.fotodetalle1 {
+    width: 350px;
+    height: 450px;
+}
+.fotodetalle2 {
+    width: 1000px;
+    height: 450px;
+}
+.cajabannerdetalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.sinopsis {
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulodpeli {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+.cajasinopsis {
+    width: 65%;
+}
+.Sinopsis{
+    font-size: larger;
+}
+.rating {
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}
+.generodepeli {
+    font-size: larger;
+}
+.estreno {
+    font-size: larger;
+}
+.duracion {
+    font-weight: bolder;
+}
+.fotodetalle3 {
+    width: 100%;
 }
 
+/* forms */
 
 form{
     display: flex;
