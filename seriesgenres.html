@@ -11,56 +11,61 @@
 </head>
 
 <body id="bodyIndex">
-        <header class="cabeza">
-            <nav>
-                <ul>
-                    <li><img src="./img/logoo.jpg" alt=""></li>                
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="detail-movie.html">Detalles de películas</a></li>
-                    <li><a href="detail-serie.html">Detalles de series</a></li>
-                    <li><a href="moviegenres.html">Generos de película</a></li>
-                    <li><a href="seriesgenres.html">Generos de series</a></li>
-                    <li><a href="detail-genres.html">Detalles de generos</a></li>
-                    <li><a href="search-results.html">Resultados de búsqueda</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Registro</a></li>
-            </nav>
-        </header>
+    <header class="cabeza">
+        <nav>
+            <ul>
+                <li><img src="./img/logoo.jpg" alt=""></li>     
+                <li>
+                    <form action="./search-results.html" method="get">
+                        <input type="text" placeholder="Buscar..." class="buscador">
+                        <input type="submit" value="Buscar" class="botonBuscar">
+                    </form>
+                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="detail-movie.html">Detalles de películas</a></li>
+                <li><a href="detail-serie.html">Detalles de series</a></li>
+                <li><a href="moviegenres.html">Generos de película</a></li>
+                <li><a href="seriesgenres.html">Generos de series</a></li>
+                <li><a href="detail-genres.html">Detalles de generos</a></li>
+                <li><a href="search-results.html">Resultados de búsqueda</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
     
-        <h2 class="titulosection">Generos Películas</h1>
-            <main id="mainIndex">
-                    <section class="generos">
-                        <article class="genero">
-                            <img src="./img/terror.jpg" alt="">
-                            <h4><a href="">Terror</a>.</h4>
-    
-                        </article>
+        <h2 class="tituloSection">Generos Series</h2>
+        <main id="mainIndex">
+            <section class="cajaPadre">
+                <section class="cajaSection">
+                    <article class="cajaArticle">
+                        <img src="./img/terror.jpg" alt="">
+                        <h3 class="nombregenero"><a href="./detail-genres.html">Terror</a></h3>
+                    </article>
+                
+                    <article class="cajaArticle">
+                        <img src="./img/comedia.jpg" alt="">
+                        <h3 class="nombregenero"><a href="./detail-genres.html">Comedia</a></h3>
+                    </article>
+                
+                    <article class="cajaArticle">
+                        <img src="./img/romance.jpg" alt="">
+                        <h3 class="nombregenero"><a href="./detail-genres.html">Romance</a></h3>
+                    </article>
                     
-                        <article class="genero">
-                            <img src="./img/comedia.jpg" alt="">
-                            <h4><a href="">Comedia.</a></h4>
-                        </article>
-                    
-                        <article class="genero">
-                            <img src="./img/romance.jpg" alt="">
-                            <h4><a href="">Romance</a></h4>
-                        </article>
-                        
-                        <article class="genero">
-                            <img src="./img/accion.jpg" alt="">
-                            <h4><a href="">Acción.</a></h4>
-                        </article>
-                    
-                        <article class="genero">
-                            <img src="./img/misterio.jpg" alt="">
-                            <h4><a href="">Misterio.</a></h4>
-                        </article>
-                    </section>        
-          
-            </main>
+                    <article class="cajaArticle">
+                        <img src="./img/accion.jpg" alt="">
+                        <h3 class="nombregenero"><a href="./detail-genres.html">Acción</a></h3>
+                    </article>
+                    <article class="cajaArticle">
+                        <img src="./img/misterio.jpg" alt="">
+                        <h3 class="nombregenero"><a href="./detail-genres.html">Misterio</a></h3>
+                    </article>
+                </section>        
+            </section>
+        </main>
 
-    
 
     <footer class="pie">
         <p>Hecho por: Mateo, Nicolás y Thiago</p>

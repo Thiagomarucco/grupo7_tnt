@@ -11,38 +11,43 @@
 </head>
 
 <body id="bodyIndex">
-        <header class="cabeza">
-            <nav>
-                <ul>
-                    <li><img src="./img/logoo.jpg" alt=""></li>                
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="detail-movie.html">Detalles de películas</a></li>
-                    <li><a href="detail-serie.html">Detalles de series</a></li>
-                    <li><a href="moviegenres.html">Generos de película</a></li>
-                    <li><a href="seriesgenres.html">Generos de series</a></li>
-                    <li><a href="detail-genres.html">Detalles de generos</a></li>
-                    <li><a href="search-results.html">Resultados de búsqueda</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Registro</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+    <header class="cabeza">
+        <nav>
+            <ul>
+                <li><img src="./img/logoo.jpg" alt=""></li>     
+                <li>
+                    <form action="./search-results.html" method="get">
+                        <input type="text" placeholder="Buscar..." class="buscador">
+                        <input type="submit" value="Buscar" class="botonBuscar">
+                    </form>
+                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="detail-movie.html">Detalles de películas</a></li>
+                <li><a href="detail-serie.html">Detalles de series</a></li>
+                <li><a href="moviegenres.html">Generos de película</a></li>
+                <li><a href="seriesgenres.html">Generos de series</a></li>
+                <li><a href="detail-genres.html">Detalles de generos</a></li>
+                <li><a href="search-results.html">Resultados de búsqueda</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
+    <main id="mainIndex">
         <section class="cajaPadreDetalles">
-                    <arcticle class="cajaBannerDetalle">
-                        <img src="./img/topgun1.jpeg" class="fotoDetalle1">
-                        <img src="./img/topgun2.jpg" class="fotoDetalle2">
-                    </arcticle>
-                    <h2 class="tituloPeli">Top Gun: Maverick</h2>
-                    <p class="rating">Rating: 8,2/10</p>
-                    <p class="estreno">Estreno: 27 de mayo de 2022</p>
-                    <P class="duracion">Duracion: 2h 11m</P>
-                    <article class="cajaSinopsis">
-                        <p class="sinopsis"> Sinopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur placeat molestiae consectetur quod saepe eum voluptatibus dignissimos aut expedita provident exercitationem non sit, libero maxime fuga a. Aspernatur, pariatur?</p>
-                    </article>
-                    <p class="generoPeli">Genero: Accion/aventura</p>
+            <arcticle class="cajaBannerDetalle">
+                <img src="./img/topgun1.jpeg" class="fotoDetalle1">
+                <img src="./img/topgun2.jpg" class="fotoDetalle2">
+            </arcticle>
+            <h2 class="tituloPeli">Top Gun: Maverick</h2>
+            <p class="rating">Rating: 8,2/10</p>
+            <p class="estreno">Estreno: 27 de mayo de 2022</p>
+            <p class="duracion">Duracion: 2h 11m</p>
+            <article class="cajaSinopsis">
+                <p class="sinopsis"> Sinopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur placeat molestiae consectetur quod saepe eum voluptatibus dignissimos aut expedita provident exercitationem non sit, libero maxime fuga a. Aspernatur, pariatur?</p>
+            </article>
+            <p class="generoPeli">Genero: Accion/aventura</p>
         </section>
     </main>
 
