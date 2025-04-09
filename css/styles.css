@@ -135,7 +135,7 @@ nav ul li form {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: left;
 }
 .detallepeli {
     display: flex;
@@ -149,14 +149,10 @@ nav ul li form {
     flex-wrap: nowrap;
     align-items: center;
 }
-.fotoDetalle1 {
-    width: 350px;
-    height: 450px;
+.fotoDetalle {
+    width: 100%;
 }
-.fotoDetalle2 {
-    width: 1000px;
-    height: 450px;
-}
+
 .cajaBannerDetalle {
     display: flex;
     flex-direction: row;
@@ -165,33 +161,76 @@ nav ul li form {
 }
 .sinopsis {
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 .tituloPeli {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    color: white;
 }
 .cajaSinopsis {
     width: 65%;
+
 }
 .sinopsis{
     font-size: larger;
+    color: white;
 }
 .rating {
-    color: green;
+    color: white;
     font-weight: bold;
     font-size: larger;
 }
 .generoPeli {
     font-size: larger;
+    color: white;
 }
 .estreno {
     font-size: larger;
+    color: white;
 }
 .duracion {
     font-weight: bolder;
+    color: white;
 }
-.fotoDetalle3 {
-    width: 100%;
+
+/* responsive de detalle de pelis y series */
+@media(max-width:480px) {
+    html {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #bodyindex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .cajaPadreDetalles {
+        width: 460px;
+    }
+    nav ul {
+        width: 460px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cabeza {
+        padding: 2px;
+        width: 460px;
+        height: 120px;
+    }
+    nav ul li a {
+        font-size: small;
+    }
+    .sinopsis {
+        width: 100%;
+    }
+    .cajaSinopsis {
+        width: 100%;
+    }
 }
 
 /* forms */
