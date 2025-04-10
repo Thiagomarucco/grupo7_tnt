@@ -232,7 +232,36 @@ nav ul li form {
         width: 100%;
     }
 }
-
+/* responsive de home, generos de pelis y series*,y detalle de generos */
+@media(max-width:480px) {
+    .cajaPadre {
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+    }
+    .cajaSection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 430;
+        padding: 0px;
+        margin: 0px;
+    }
+    .cajaArticle {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tituloSection {
+        display: flex;
+        justify-content: center;
+    }
+    .nombrePeli {
+        font-size: small;
+    }
+}
 /* forms */
 
 .formularios{
@@ -294,3 +323,4 @@ nav ul li form {
     text-decoration: none;
     color: black;
 }
+/* responsive de home */
