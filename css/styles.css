@@ -1,6 +1,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
+    color : #ffffff;
 }
 
 #bodyIndex {
@@ -20,7 +21,6 @@
     justify-content: center;
     align-items: center;
     background-color: #1d3c92;
-    color: white;
     height: 70px;
     width: 100%;
     margin-bottom: 20px;
@@ -32,7 +32,6 @@
     justify-content: center;
     align-items: center;
     background-color: #1d3c92;
-    color: white;
     height: 70px;
     width: 100%;
     margin-top: 20px;
@@ -161,12 +160,10 @@ nav ul li form {
 }
 .sinopsis {
     font-family: 'Times New Roman', Times, serif;
-    color: white;
 }
 .tituloPeli {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
-    color: white;
 }
 .cajaSinopsis {
     width: 65%;
@@ -174,28 +171,84 @@ nav ul li form {
 }
 .sinopsis{
     font-size: larger;
-    color: white;
 }
 .rating {
-    color: white;
     font-weight: bold;
     font-size: larger;
 }
 .generoPeli {
     font-size: larger;
-    color: white;
 }
 .estreno {
     font-size: larger;
-    color: white;
 }
 .duracion {
     font-weight: bolder;
-    color: white;
 }
 
-/* responsive de detalle de pelis y series */
+/* forms */
+
+.botonBuscar, .buttons button, .buscador{
+    color: black;
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 20px;
+    box-sizing: content-box;
+}
+
+.formularios label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formularios p{
+    font-size: 15px;
+    color: red;
+    margin-bottom: 10px;
+}
+.formularios div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.formularios input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.cuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.cuenta a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.cuenta p{
+    font-size: 20px;
+}
+
+.nombregenero {
+    font-size: larger;
+    font-weight: bold;
+    justify-content: center;
+}
+.nombregenero a{
+    text-decoration: none;
+}
+
 @media(max-width:480px) {
+    /* responsive de detalle de pelis y series */
     html {
         display: flex;
         align-items: center;
@@ -231,9 +284,7 @@ nav ul li form {
     .cajaSinopsis {
         width: 100%;
     }
-}
-/* responsive de home, generos de pelis y series*,y detalle de generos */
-@media(max-width:480px) {
+    /* responsive de home, generos de pelis y series*,y detalle de generos */
     .cajaPadre {
         display: flex;
         flex-direction: column;
@@ -248,7 +299,7 @@ nav ul li form {
         margin: 0px;
     }
     .cajaArticle {
-        width: 40%;
+         width: 40%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -261,66 +312,40 @@ nav ul li form {
     .nombrePeli {
         font-size: small;
     }
-}
-/* forms */
+    /*responsive de formularios*/
+    .bienvenida{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: large;
+    }
+    .formularios{
+        width: 100%;
+        padding: 20px;
+    }
+    .formularios label{
+        font-size: 15px;
+    }
+    .formularios input{
+        font-size: medium;
+    }
+    .formularios p{
+        font-size: 15px;
+    }
+    .formularios div{
+        margin-bottom: 10px;
+    }
+    .cuenta a{
+        font-size: 15px;
+    }
+    .cuenta p{
+        font-size: 15px;
+    }
+    .cuenta{
+        margin-top: 10px;
+    }
 
-.formularios{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    margin: 0 auto;
-    padding: 50px;
-    margin-top: 20px;
-    box-sizing: content-box;
-}
-
-.formularios label{
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 10px;
-}
-.formularios p{
-    font-size: 15px;
-    color: red;
-    margin-bottom: 10px;
-}
-.formularios div{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.formularios input{
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: large;
-}
-
-.cuenta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-.cuenta a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-}
-.cuenta p{
-    font-size: 20px;
-    color: #000000;
 }
 
-    
-.nombregenero {
-    font-size: larger;
-    font-weight: bold;
-    justify-content: center;
-}
-.nombregenero a{
-    text-decoration: none;
-    color: black;
-}
-/* responsive de home */
