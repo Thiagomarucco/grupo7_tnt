@@ -17,7 +17,17 @@
                 <li>
                     <form action="./search-results.html" method="get">
                         <input type="text" name="Resultados de busqueda" placeholder="Buscar..." class="buscador">
+
+                        <div class="checks">
+                            <input type="radio" name="type" id="pelicula" value="movie">
+                            <label for="pelicula">Películas</label>
+
+                            <input type="radio" name="type" id="serie" value="tv">
+                            <label for="serie">Series</label>
+                        </div>
+
                         <input type="submit" value="Buscar" class="botonBuscar">
+
                     </form>
                 </li>
                 <li><a href="./index.html">Home</a></li>
@@ -33,109 +43,25 @@
         <section class="cajaPadre">
             <h2 class="tituloSection">Películas Populares</h2>
             <section class="cajaSection">
-                <article class="cajaArticle">
-                    <a href="./detail-movie.html" class="detailclick">                    
-                        <img src="./img/spiderman.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Spiderman     15/3/02</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-movie.html" class="detailclick">                    
-                        <img src="./img/volveralfuturo.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Back to the Future  26/12/85</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-movie.html" class="detailclick">                    
-                        <img src="./img/rambo.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Rambo     4/11/82</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-movie.html" class="detailclick">                    
-                        <img src="./img/creed.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Creed    4/2/16</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-movie.html" class="detailclick">                    
-                        <img src="./img/rapidofurioso.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">The Fast and Furious     21/6/01</h3>
-                </article>
+
             </section>
 
             <h2 class="tituloSection">Series Populares</h2>
             <section class="cajaSection">
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                    <img src="./img/breakingBad.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Breaking Bad     20/1/08</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                    <img src="./img/gentlemen.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">The Gentlemen   3/12/19</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                    <img src="./img/peaky.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Peaky Blinders    12/9/13</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                    <img src="./img/neymar.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Neymar    25/01/22</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                    <img src="./img/lastdance.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">The Last Dance     19/4/20</h3>
-                </article>
+
             </section>
-        
-            <h2 class="tituloSection">Lo mas visto en series</h2>
+
+            <h2 class="tituloSection">Lo más visto en series</h2>
             <section class="cajaSection">
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                        <img src="./img/friends.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Friends     22/9/94</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                        <img src="./img/modernFamily.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Modern Family   23/9/09</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                        <img src="./img/arrow.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Arrow     10/10/12</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                        <img src="./img/squidGame.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Squid Game    17/9/21</h3>
-                </article>
-                <article class="cajaArticle">
-                    <a href="./detail-serie.html" class="detailclick">
-                        <img src="./img/obx.jpg" alt="">
-                    </a>
-                    <h3 class="nombrePeli">Outer Banks     15/4/20</h3>
-                </article>
+
             </section>
+
         </section>
     </main>
     <footer class="pie">
         <p>Hecho por: Mateo, Nicolás y Thiago</p>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
