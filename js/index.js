@@ -18,8 +18,10 @@ fetch(urlPelis)
     for (let index = 0; index < 5; index++) {
         let pelicula = data.results[index];
         peliculas += `
-            <div class="cajaArticle">
-                <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}">
+            <div class="cajaArticle"> 
+                <a href="./detail-movie.html?id=${pelicula.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}">
+                </a>
                 <h3>${pelicula.title}</h3>
                 <p>Fecha de estreno</p>
                 <p>${pelicula.release_date}</p>
@@ -44,7 +46,9 @@ fetch(urlSeries)
             let serie = data.results[index];
             series += `
                 <div class="cajaArticle">
+                    <a href= "./detail-serie.html?id=${serie.id}">
                     <img src="https://image.tmdb.org/t/p/w500${serie.poster_path}">
+                    <a/>
                     <h3>${serie.name}</h3>
                     <p>Fecha de estreno</p>
                     <p>${serie.first_air_date}</p>
@@ -79,3 +83,28 @@ fetch(urlSeriesPopulares)
     .catch(function(error) {
         console.log("Error: " + error);
     });
+
+    fetch(urlSeriesPopulares)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    let seriesPopulares = "";
+    for (let index = 0; index < 5; index++) {
+      let serie = data.results[index];
+      seriesPopulares += `
+        <div class="cajaArticle">
+          <a href="./detail-serie.html?id=${serie.id}">
+            <img src="https://image.tmdb.org/t/p/w500${serie.poster_path}">
+          </a>
+          <h3>${serie.name}</h3>
+          <p>Fecha de estreno</p>
+          <p>${serie.first_air_date}</p>
+        </div>
+      `;
+    }
+    cajaSeriesPopulares.innerHTML = seriesPopulares;
+  })
+  .catch(function(error) {
+    console.log("Error: " + error);
+  });
