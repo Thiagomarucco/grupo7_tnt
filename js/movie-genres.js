@@ -12,21 +12,27 @@ fetch(urlMgenres)
     const element = res[i];
     generos += `
       <article class="cajaArticle">
-      <img src="">
-        <h3 class="nombregenero">
-          <a href="./detail-genres.html?id=${element.id}"> ${element.name}</a>
+        <h3 class="nombreGenero">
+          <a href="./detail-genres-movies.html?id=${element.id}"> ${element.name}</a>
         </h3>
       </article>`;
   }
-  // faltan las imagenes //
   captura.innerHTML = generos;
   let stilos = document.querySelector(".cajaArticle")
   stilos.style.width = "230px";
   let stisec = document.querySelector(".cajaSection");
   stisec.style.display = "flex";
   stisec.style.flexWrap = "wrap";
-  stisec.style.justifyContent = "spaceevenly";
+  stisec.style.justifyContent = "space-evenly";
   stisec.style.padding = "15px";
+
+  let nombresGenero = document.querySelectorAll(".nombreGenero");
+  for (let i = 0; i < nombresGenero.length; i++) {
+    nombresGenero[i].style.border = "2px solid black";
+    nombresGenero[i].style.padding = "10px";
+    nombresGenero[i].style.backgroundColor = "#5a90ed";
+    nombresGenero[i].style.margin = "10px";
+  }
 })
 .catch(function(error) {
   console.log("Error: " + error);

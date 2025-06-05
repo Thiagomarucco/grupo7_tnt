@@ -18,8 +18,23 @@ fetch(urlDetalle)
     document.querySelector(".duracion").innerText = "Duración: " + data.runtime + " minutos";
     document.querySelector(".sinopsis").innerText = "Sinopsis: " + data.overview;
     document.querySelector(".fotoDetalle").src = "https://image.tmdb.org/t/p/w500" + data.backdrop_path;
-    document.querySelector(".generoPeli").innerText = "Género: " + data.genres[0].name;
+    
+    let generoLinks = "";
+
+    for (let i = 0; i < data.genres.length; i++) {
+      let genero = data.genres[i];
+      generoLinks += `<a href="detail-genres-movies.html?id=${genero.id}" class="genero-link">${genero.name}</a> `;
+    }
+
+    document.querySelector(".generoPeli").innerHTML = "Género: " + generoLinks;
+
+  let links = document.querySelectorAll(".genero-link");
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.textDecoration = "none";
+    links[i].style.margin = "10px";
+  }
   })
+
   .catch(function(error) {
     console.log("Error: " + error);
   });
