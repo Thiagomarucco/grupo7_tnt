@@ -19,9 +19,9 @@ fetch(url)
                     <a href= "./detail-serie.html?id=${serie.id}">
                     <img src="https://image.tmdb.org/t/p/w500${serie.poster_path}">
                     <a/>
-                    <h3>${serie.name}</h3>
+                    <h3>${serie.title}</h3>
                     <p>Fecha de estreno</p>
-                    <p>${serie.first_air_date}</p>
+                    <p>${serie.release_date}</p>
                 </div>
             `;
         }

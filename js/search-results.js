@@ -50,12 +50,12 @@ if (radio == "movie") {
         let pelicula = data.results[i];
         peliculas += `
             <div class="cajaArticle"> 
-                <a href="./detail-movie.html?id=${pelicula.id}">
+                <a href="./detail-serie.html?id=${pelicula.id}">
                     <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}">
                 </a>
-                <h3>${pelicula.title}</h3>
+                <h3>${pelicula.name}</h3>
                 <p>Fecha de estreno</p>
-                <p>${pelicula.release_date}</p>
+                <p>${pelicula.first_air_date}</p>
             </div>
         `;
     }
