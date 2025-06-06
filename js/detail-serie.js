@@ -11,11 +11,15 @@ fetch(urlDetalle)
     return respuesta.json();
   })
   .then(function(data) {
-   
+    console.log(data);
     document.querySelector(".tituloPeli").innerText = data.name;
     document.querySelector(".rating").innerText = "Rating: " + data.vote_average + "/10";
     document.querySelector(".estreno").innerText = "Estreno: " + data.first_air_date;
-    document.querySelector(".duracion").innerText = "Duracion: " + data.episode_run_time[0] + " minutos por capitulo";
+    if (data.episode_run_time && data.episode_run_time.length > 0) {
+      document.querySelector(".duracion").innerText = "Duración: " + data.episode_run_time[0] + " minutos por capítulo";
+    } else {
+      document.querySelector(".duracion").innerText = "Duración no disponible";
+    }
     document.querySelector(".sinopsis").innerText = "Sinopsis: " + data.overview;
     document.querySelector(".generoPeli").innerText = "Genero: " + data.genres[0].name;
     document.querySelector(".fotoDetalle").src = "https://image.tmdb.org/t/p/w500" + data.backdrop_path;

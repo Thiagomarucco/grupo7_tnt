@@ -59,7 +59,7 @@ if (radio == "movie") {
                 </a>
                 <h3>${pelicula.name}</h3>
                 <p>Fecha de estreno</p>
-                <p>${pelicula.first_airdate}</p>
+                <p>${pelicula.first_air_date}</p>
             </div>
         `;
     }
