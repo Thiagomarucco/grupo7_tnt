@@ -4,6 +4,8 @@ let buscar = queryObj.get("Resultados de busqueda");
 console.log(buscar)
 let radio = queryObj.get("type");
 
+let gif = document.querySelector('.gif');
+
 let urlpelis = `https://api.themoviedb.org/3/search/movie?api_key=baa0951159508b20d0796a6a16699e51&query=${buscar}`;
 let urlseries = `https://api.themoviedb.org/3/search/tv?api_key=baa0951159508b20d0796a6a16699e51&query=${buscar}`;
 
@@ -34,6 +36,8 @@ if (radio == "movie") {
     if (data.results.length === 0) {
         captura.innerHTML = `<p>No se encontraron resultados para "${buscar}".</p>`;
     }
+    gif.style.display = "none";
+
     })
     .catch(function(error) {
     console.log("Error: " + error);
@@ -55,7 +59,7 @@ if (radio == "movie") {
                 </a>
                 <h3>${pelicula.name}</h3>
                 <p>Fecha de estreno</p>
-                <p>${pelicula.first_air_date}</p>
+                <p>${pelicula.first_airdate}</p>
             </div>
         `;
     }
@@ -65,6 +69,8 @@ if (radio == "movie") {
     if (data.results.length === 0) {
         captura.innerHTML = `<p>No se encontraron resultados para "${buscar}".</p>`;
     }
+    gif.style.display = "none";
+    
     })
     .catch(function(error) {
     console.log("Error: " + error);
